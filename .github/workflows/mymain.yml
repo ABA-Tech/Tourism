@@ -18,7 +18,7 @@ jobs:
     - name: Publish .NET Core Project
       run: dotnet publish Tourism.sln -c Release -o release --nologo
     - name: Commit wwwroot to GitHub Pages
-      uses: aba/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
